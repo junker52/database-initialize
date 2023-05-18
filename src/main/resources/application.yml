@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    first-database:
+      url: jdbc:h2:file:./first-db
+      driverClassName: org.h2.Driver
+      username: sa
+      password: password
+    second-database:
+      url: jdbc:h2:file:./second-db
+      driverClassName: org.h2.Driver
+      username: sa
+      password: password
+logging:
+  level:
+    org.springframework.jdbc: DEBUG
+    com.zaxxer.hikari: DEBUG
